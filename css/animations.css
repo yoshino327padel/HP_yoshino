@@ -1,0 +1,114 @@
+/* ===== Animations & Keyframes ===== */
+/* All @keyframes, scroll animations, and transition effects */
+
+/* ===== Hero Animations ===== */
+@keyframes meshMove {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-30px, -20px) scale(1.05); }
+}
+
+@keyframes tagPulse {
+  0%, 100% { border-color: rgba(255,255,255,0.15); box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+  50% { border-color: rgba(255,255,255,0.35); box-shadow: 0 0 20px 2px rgba(255,107,0,0.25); }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.5; }
+  50% { transform: translateX(-50%) translateY(10px); opacity: 1; }
+}
+
+/* Hero text entrance */
+.hero-tag { opacity: 0; animation: heroEntrance 0.8s ease-out 0.2s forwards, tagPulse 3s ease-in-out 1s infinite; }
+.hero-name { opacity: 0; animation: heroEntrance 0.8s ease-out 0.4s forwards; }
+.hero-motto { opacity: 0; animation: heroEntrance 0.8s ease-out 0.55s forwards; }
+.hero-desc { opacity: 0; animation: heroEntrance 0.8s ease-out 0.7s forwards; }
+.hero-buttons { opacity: 0; animation: heroEntrance 0.8s ease-out 0.9s forwards; }
+.hero-stats { opacity: 0; animation: heroEntrance 0.8s ease-out 1.1s forwards; }
+
+@keyframes heroEntrance {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+/* ===== Scroll Reveal ===== */
+.fade-in {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+.slide-in-left {
+  opacity: 0; transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.slide-in-left.visible { opacity: 1; transform: translateX(0); }
+
+.slide-in-right {
+  opacity: 0; transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.slide-in-right.visible { opacity: 1; transform: translateX(0); }
+
+.scale-in {
+  opacity: 0; transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scale-in.visible { opacity: 1; transform: scale(1); }
+
+/* Stagger children */
+.stagger-children > .fade-in:nth-child(1) { transition-delay: 0.1s; }
+.stagger-children > .fade-in:nth-child(2) { transition-delay: 0.2s; }
+.stagger-children > .fade-in:nth-child(3) { transition-delay: 0.3s; }
+.stagger-children > .fade-in:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children > .fade-in:nth-child(5) { transition-delay: 0.5s; }
+.stagger-children > .fade-in:nth-child(6) { transition-delay: 0.6s; }
+
+/* ===== Glitch Animation ===== */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  10% { transform: translate(-3px, 2px); }
+  20% { transform: translate(3px, -2px); }
+  30% { transform: translate(-2px, -1px); }
+  40% { transform: translate(2px, 1px); }
+  50% { transform: translate(-1px, 2px); }
+  60% { transform: translate(1px, -1px); }
+  70% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+
+@keyframes glitchColor1 {
+  0% { clip-path: inset(0 0 100% 0); }
+  10% { clip-path: inset(20% 0 60% 0); }
+  20% { clip-path: inset(40% 0 20% 0); }
+  30% { clip-path: inset(60% 0 10% 0); }
+  40% { clip-path: inset(10% 0 70% 0); }
+  50% { clip-path: inset(50% 0 30% 0); }
+  60% { clip-path: inset(0 0 100% 0); }
+  100% { clip-path: inset(0 0 100% 0); }
+}
+
+@keyframes glitchColor2 {
+  0% { clip-path: inset(100% 0 0 0); }
+  10% { clip-path: inset(60% 0 20% 0); }
+  20% { clip-path: inset(20% 0 40% 0); }
+  30% { clip-path: inset(10% 0 60% 0); }
+  40% { clip-path: inset(70% 0 10% 0); }
+  50% { clip-path: inset(30% 0 50% 0); }
+  60% { clip-path: inset(100% 0 0 0); }
+  100% { clip-path: inset(100% 0 0 0); }
+}
+
+/* ===== Timeline Flash ===== */
+.timeline-item.visible::before {
+  animation: timelineFlash 0.4s ease-out;
+}
+@keyframes timelineFlash {
+  0% { box-shadow: 0 0 0 2px var(--primary), 0 0 20px rgba(255,107,0,0.6); }
+  100% { box-shadow: 0 0 0 2px var(--primary); }
+}

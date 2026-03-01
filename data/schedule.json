@@ -1,0 +1,23 @@
+{
+  "lastUpdated": "2026-02-10T00:00:00+09:00",
+  "items": [
+    {
+      "dates": "2026.02.11 - 02.15",
+      "name": "FIP Bronze Wadi Padel Tournament",
+      "location": "Wadi El Natrun, Egypt",
+      "url": "https://www.padelfip.com/events/fip-bronze-wadi-padel-tournament-2026/",
+      "status": "active",
+      "badge": "intl",
+      "badgeLabel": "エントリー済"
+    },
+    {
+      "dates": "2026.02.16 - 02.22",
+      "name": "FIP Silver DAMAC Dubai",
+      "location": "Dubai, UAE",
+      "url": "https://www.padelfip.com/events/fip-silver-damac-dubai-2026/",
+      "status": "upcoming",
+      "badge": "intl",
+      "badgeLabel": "エントリー済"
+    }
+  ]
+}

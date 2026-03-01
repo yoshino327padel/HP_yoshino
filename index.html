@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>串間よし乃 | パデル選手 公式サイト</title>
+  <meta name="description" content="パデル選手串間よし乃の公式ウェブサイト。最新ニュース、試合結果、プロフィール情報をお届けします。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">KUSHIMA<span>YOSHINO</span></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#results">Results</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#news">News</a>
+          <a href="#sponsors">Partners</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="lang-switch">
+          <button class="active" onclick="switchLang('ja')">JP</button>
+          <button onclick="switchLang('en')">EN</button>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <!-- ===== Mobile Menu ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="メニューを閉じる">&times;</button>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+    <a href="#results" class="mobile-link">Results</a>
+    <a href="#schedule" class="mobile-link">Schedule</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#news" class="mobile-link">News</a>
+    <a href="#sponsors" class="mobile-link">Partners</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <div class="lang-switch" style="margin-top: 16px;">
+      <button class="active" onclick="switchLang('ja')" style="width: 48px; padding: 6px 0; font-size: 0.9rem;">JP</button>
+      <button onclick="switchLang('en')" style="width: 48px; padding: 6px 0; font-size: 0.9rem;">EN</button>
+    </div>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-left"></div>
+    <div class="hero-bg-right"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tag">PRO PADEL PLAYER / CHALLENGING THE WORLD</div>
+        <h1 class="hero-name" data-text="KUSHIMA YOSHINO">
+          <span class="hero-name-stroke">KUSHIMA</span><br>
+          <span class="hero-name-fill">YOSHINO</span>
+        </h1>
+        <p class="hero-motto" data-i18n="hero-motto">「報われるまで努力し続ける」</p>
+        <p class="hero-desc" data-i18n="hero-desc">
+          世界を舞台に戦う日本人プロパデルプレイヤー。<br>
+          日本パデルの新たな歴史を刻む。
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span data-i18n="hero-btn-contact">お問い合わせ</span>
+          </a>
+          <a href="#about" class="btn btn-outline">
+            <span data-i18n="hero-btn-profile">プロフィールを見る</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">160</div>
+            <div class="hero-stat-label" data-i18n="hero-stat-1-label">FIPランキング（2026/2/23時点）</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">15+</div>
+            <div class="hero-stat-label" data-i18n="hero-stat-2-label">出場国数</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <span class="section-watermark">ABOUT</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">About</div>
+        <h2 class="section-title" data-i18n="about-title">プロフィール</h2>
+        <p class="section-subtitle" data-i18n="about-subtitle">世界の舞台で戦うプロパデルプレイヤー</p>
+      </div>
+
+      <!-- ===== メインプロフィール ===== -->
+      <div class="about-grid">
+        <div class="about-image-area slide-in-left">
+          <img src="images/profile.jpeg" alt="串間よし乃 プロフィール" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius);">
+        </div>
+        <div class="about-text slide-in-right">
+          <h3 data-i18n="about-heading">テニスからパデルへ。<br><span>世界</span>への挑戦</h3>
+          <p data-i18n="about-p1">
+            プロパデルプレイヤー串間よし乃。東京都出身、1998年3月27日生まれ。
+            日本大学体育会テニス部で活躍後、IT企業に就職しテニスは趣味として継続。
+            会社員として働く中でパデルと出会い、2024年1月に転向。
+            わずか1年以内で日本代表にも選出され、2024年・2025年と2年連続で世界の舞台に立つ。
+            2026年1月からりんたろうランド株式会社アスリート社員として、
+            プロ選手とのデュアルキャリアを実践中。
+            世界ランキング20位以内・世界大会ベスト8・Premier Padel本選出場を目指し世界を転戦している。
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== キャリアの歩み ===== -->
+      <div class="career-journey fade-in">
+        <h3 data-i18n="career-heading">キャリアの歩み</h3>
+        <div class="timeline-grid">
+          <!-- 左列: テニス時代 -->
+          <div>
+            <div class="timeline-col-label" data-i18n="career-col-before">テニス時代</div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-year" data-i18n="career-1-year">6歳</div>
+                <div class="timeline-title" data-i18n="career-1-title">テニスを始める</div>
+                <div class="timeline-desc" data-i18n="career-1-desc">6歳からテニスをスタート</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year" data-i18n="career-1b-year">8歳〜12歳</div>
+                <div class="timeline-title" data-i18n="career-1b-title">サッカーにも取り組む</div>
+                <div class="timeline-desc" data-i18n="career-1b-desc">テニスと並行してサッカーにも打ち込む</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year" data-i18n="career-2-year">中学・高校</div>
+                <div class="timeline-title" data-i18n="career-2-title">富士見丘中学・高校テニス部</div>
+                <div class="timeline-desc" data-i18n="career-2-desc">テニス部に所属し競技力を磨く</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year" data-i18n="career-3-year">大学</div>
+                <div class="timeline-title" data-i18n="career-3-title">日本大学体育会テニス部</div>
+                <div class="timeline-desc" data-i18n="career-3-desc">最高戦績は関東学生。関東学生連盟のIT担当として大会運営も経験</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year" data-i18n="career-4-year">大学卒業後</div>
+                <div class="timeline-title" data-i18n="career-4-title">IT企業に就職 / テニスは趣味として継続</div>
+                <div class="timeline-desc" data-i18n="career-4-desc">テニスは趣味として続ける</div>
+              </div>
+            </div>
+          </div>
+          <!-- 右列: パデル時代 -->
+          <div>
+            <div class="timeline-col-label highlight" data-i18n="career-col-after">パデル時代</div>
+            <div class="timeline timeline-highlight">
+              <div class="timeline-item highlight">
+                <div class="timeline-year">2024.01</div>
+                <div class="timeline-title" data-i18n="career-5-title">パデルを始める</div>
+                <div class="timeline-desc" data-i18n="career-5-desc">会社員をしながらパデルに転向</div>
+              </div>
+              <div class="timeline-item highlight">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-title" data-i18n="career-6-title">世界選手権出場 / APPT Master Final</div>
+                <div class="timeline-desc" data-i18n="career-6-desc">世界選手権・APPTマスターファイナル出場</div>
+              </div>
+              <div class="timeline-item highlight">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-title" data-i18n="career-7-title">FIP Tour世界転戦 / Premier Padel挑戦</div>
+                <div class="timeline-desc" data-i18n="career-7-desc">15カ国以上を転戦。IT企業を12月に退社</div>
+              </div>
+              <div class="timeline-item highlight">
+                <div class="timeline-year">2026</div>
+                <div class="timeline-title" data-i18n="career-8-title">りんたろうランド入社 / デュアルキャリア継続</div>
+                <div class="timeline-desc" data-i18n="career-8-desc">アスリート社員として世界挑戦中</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Achievements ===== -->
+  <section class="section achievements" id="achievements">
+    <div class="achievements-bg-left"></div>
+    <div class="achievements-bg-right"></div>
+    <span class="section-watermark">ACHIEVEMENTS</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Achievements</div>
+        <h2 class="section-title" data-i18n="achievements-title">戦績・実績</h2>
+        <p class="section-subtitle" data-i18n="achievements-subtitle">これまでの主な大会成績</p>
+      </div>
+      <!-- 2024 -->
+      <h3 style="font-size: 1.2rem; font-weight: 800; color: #ffffff; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+        <span style="display: inline-block; padding: 4px 14px; border-radius: 50px; background: var(--primary); color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.85rem;">2024</span>
+      </h3>
+      <div class="achievements-grid stagger-children" style="margin-bottom: 48px;">
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2024</div>
+          <div class="achievement-title" data-i18n="ach-1-title">世界選手権 初出場</div>
+          <span class="achievement-result gold-badge" data-i18n="ach-1-badge">世界大会</span>
+          <p class="achievement-desc" data-i18n="ach-1-desc">パデルを始めて1年で世界の舞台へ。</p>
+        </div>
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2024</div>
+          <div class="achievement-title">World Padel Championship</div>
+          <span class="achievement-result silver-badge" data-i18n="ach-2-badge">出場</span>
+          <p class="achievement-desc" data-i18n="ach-2-desc">世界選手権に出場。日本代表メンバー。</p>
+        </div>
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2024</div>
+          <div class="achievement-title">APPT Master Final</div>
+          <span class="achievement-result silver-badge" data-i18n="ach-3-badge-1">準優勝</span>
+          <span class="achievement-result bronze-badge" style="margin-left: 4px;" data-i18n="ach-3-badge-2">ベスト4</span>
+          <p class="achievement-desc" data-i18n="ach-3-desc">ミックスダブルス準優勝、女子ダブルスベスト4。</p>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <h3 style="font-size: 1.2rem; font-weight: 800; color: #ffffff; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+        <span style="display: inline-block; padding: 4px 14px; border-radius: 50px; background: var(--primary); color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 0.85rem;">2025</span>
+      </h3>
+      <div class="achievements-grid stagger-children">
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2025</div>
+          <div class="achievement-title" data-i18n="ach-4-title">FIP Tour 世界転戦</div>
+          <span class="achievement-result gold-badge" data-i18n="ach-4-badge">世界転戦</span>
+          <p class="achievement-desc" data-i18n="ach-4-desc">世界各地をFIP Tourで転戦。ランキング上昇。</p>
+        </div>
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2025</div>
+          <div class="achievement-title" data-i18n="ach-5-title">Cupra FIP Finals 出場</div>
+          <span class="achievement-result r16">R16</span>
+          <p class="achievement-desc" data-i18n="ach-5-desc">中国で開催されたFIPファイナルズに出場。</p>
+        </div>
+        <div class="achievement-card fade-in">
+          <div class="achievement-year">2025-26</div>
+          <div class="achievement-title" data-i18n="ach-6-title">FIPランキング更新中</div>
+          <span class="achievement-result silver-badge" data-i18n="ach-6-badge">160位台</span>
+          <p class="achievement-desc" data-i18n="ach-6-desc">世界転戦としランキング向上中。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Results ===== -->
+  <section class="section results" id="results">
+    <span class="section-watermark">RESULTS</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Results</div>
+        <h2 class="section-title" data-i18n="results-title">大会結果</h2>
+        <p class="section-subtitle" data-i18n="results-subtitle">FIP Tour / Premier Padel 出場結果</p>
+      </div>
+      <!-- Premier Padel -->
+      <h3 class="results-heading results-heading-premier">
+        <span class="results-heading-bar"></span>
+        Premier Padel
+      </h3>
+      <div class="table-scroll-wrapper">
+      <table class="results-table results-table-premier fade-in" style="margin-bottom: 40px;">
+        <thead>
+          <tr>
+            <th data-i18n="results-th-date">日程</th>
+            <th data-i18n="results-th-tournament">大会名</th>
+            <th data-i18n="results-th-location">開催地</th>
+            <th data-i18n="results-th-result">結果</th>
+            <th class="hide-mobile">Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="results-year-divider">
+            <td colspan="5">2025</td>
+          </tr>
+          <tr>
+            <td class="year-cell">11/22</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/premier-padel-gnp-acapulco-major-2025/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Premier Padel GNP Acapulco Major</a></td>
+            <td>Acapulco, Mexico</td>
+            <td><span class="result-badge q1">Q1</span></td>
+            <td class="hide-mobile">0</td>
+          </tr>
+          <tr>
+            <td class="year-cell">10/25</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/newgiza-p2-2025/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">NEWGIZA Premier Padel P2</a></td>
+            <td>Giza, Egypt</td>
+            <td><span class="result-badge q1">Q1</span></td>
+            <td class="hide-mobile">0</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <!-- Cupra FIP Tour -->
+      <h3 class="results-heading results-heading-fip">
+        <span class="results-heading-bar"></span>
+        Cupra FIP Tour
+      </h3>
+      <div class="table-scroll-wrapper">
+      <table class="results-table fade-in">
+        <thead>
+          <tr>
+            <th data-i18n="results-th-date">日程</th>
+            <th data-i18n="results-th-tournament">大会名</th>
+            <th data-i18n="results-th-location">開催地</th>
+            <th data-i18n="results-th-result">結果</th>
+            <th class="hide-mobile">Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="results-year-divider">
+            <td colspan="5">2026</td>
+          </tr>
+          <tr>
+            <td class="year-cell">02/16</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-silver-damac-dubai-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Silver DAMAC Dubai</a></td>
+            <td>Dubai, UAE</td>
+            <td><span class="result-badge r32">R32</span></td>
+            <td class="hide-mobile">5</td>
+          </tr>
+          <tr>
+            <td class="year-cell">02/11</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-wadi-padel-tournament-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Bronze Wadi Padel Tournament</a></td>
+            <td>Wadi El Natrun, Egypt</td>
+            <td><span class="result-badge r16">R16</span></td>
+            <td class="hide-mobile">5</td>
+          </tr>
+          <tr>
+            <td class="year-cell">02/04</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-bahrain-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Bronze Bahrain</a></td>
+            <td>Bahrain</td>
+            <td><span class="result-badge r32">R32</span></td>
+            <td class="hide-mobile">3</td>
+          </tr>
+          <tr>
+            <td class="year-cell">01/28</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-doha-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Bronze Doha</a></td>
+            <td>Doha, Qatar</td>
+            <td><span class="result-badge r32">R32</span></td>
+            <td class="hide-mobile">3</td>
+          </tr>
+          <tr>
+            <td class="year-cell">01/14</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-silver-australian-padel-open-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Silver Australian Padel Open</a></td>
+            <td>Melbourne, Australia</td>
+            <td><span class="result-badge qf">QF</span></td>
+            <td class="hide-mobile">14</td>
+          </tr>
+          <tr>
+            <td class="year-cell">01/07</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-merlbourne-padel-open-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Bronze Melbourne Padel Open</a></td>
+            <td>Melbourne, Australia</td>
+            <td><span class="result-badge qf">QF</span></td>
+            <td class="hide-mobile">8</td>
+          </tr>
+          <tr class="results-year-divider">
+            <td colspan="5">2025</td>
+          </tr>
+          <tr>
+            <td class="year-cell">12/03</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/cupra-fip-finals-2025/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Cupra FIP Finals</a></td>
+            <td>Shanghai, China</td>
+            <td><span class="result-badge r16">R16</span></td>
+            <td class="hide-mobile">20</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="results.html" class="btn btn-outline" style="color: var(--primary); border-color: var(--primary);">
+          <span data-i18n="results-view-all">全成績一覧を見る</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Schedule ===== -->
+  <section class="section schedule" id="schedule">
+    <div class="schedule-bg-left"></div>
+    <div class="schedule-bg-right"></div>
+    <span class="section-watermark">SCHEDULE</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Schedule</div>
+        <h2 class="section-title" data-i18n="schedule-title">今後の出場予定</h2>
+        <p class="section-subtitle" data-i18n="schedule-subtitle">Cupra FIP Tour エントリー大会</p>
+      </div>
+      <div class="schedule-grid">
+        <div class="schedule-card active fade-in">
+          <div class="schedule-month">2026.03.03 - 03.08</div>
+          <a href="https://www.padelfip.com/events/fip-bronze-singapore-2026/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+            <div class="schedule-event">FIP Bronze Singapore</div>
+          </a>
+          <div class="schedule-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Singapore
+          </div>
+          <span class="schedule-badge intl" data-i18n="schedule-entered">エントリー済</span>
+        </div>
+        <div class="schedule-card active fade-in">
+          <div class="schedule-month">2026.03.09 - 03.15</div>
+          <a href="https://www.padelfip.com/events/fip-silver-manila-2026/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+            <div class="schedule-event">FIP Silver Manila</div>
+          </a>
+          <div class="schedule-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Manila, Philippines
+          </div>
+          <span class="schedule-badge intl" data-i18n="schedule-entered">エントリー済</span>
+        </div>
+        <!-- 今後のエントリー追加用 -->
+        <div class="schedule-card fade-in" style="background: rgba(255,255,255,0.06); border-left-color: rgba(255,255,255,0.2);">
+          <div class="schedule-month" style="color: rgba(255,255,255,0.5);" data-i18n="schedule-coming">Coming Soon</div>
+          <div class="schedule-event" style="color: rgba(255,255,255,0.5);" data-i18n="schedule-additional">追加エントリー</div>
+          <div class="schedule-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="schedule-tbd">確定次第更新</span>
+          </div>
+          <span class="schedule-badge domestic" data-i18n="schedule-regular">随時更新</span>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 24px; font-size: 0.85rem; color: rgba(255,255,255,0.7);" data-i18n="schedule-fip-note">
+        最新情報は <a href="https://www.padelfip.com/player/yoshino-kushima/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">FIP公式HP</a> をご確認ください
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section gallery" id="gallery">
+    <span class="section-watermark">GALLERY</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Gallery</div>
+        <h2 class="section-title" data-i18n="gallery-title">ギャラリー</h2>
+        <p class="section-subtitle" data-i18n="gallery-subtitle">試合や練習の様子</p>
+      </div>
+      <div class="gallery-tabs" id="galleryTabs"></div>
+      <div class="gallery-event-header" id="galleryHeader"></div>
+      <div class="gallery-photos scale-in" id="galleryPhotos"></div>
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="閉じる">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="前へ">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button class="lightbox-next" id="lightboxNext" aria-label="次へ">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== News ===== -->
+  <section class="section news" id="news">
+    <div class="news-bg-left"></div>
+    <div class="news-bg-right"></div>
+    <span class="section-watermark">NEWS</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">News</div>
+        <h2 class="section-title" data-i18n="news-title">最新ニュース</h2>
+        <p class="section-subtitle" data-i18n="news-subtitle">活動報告やメディア出演情報</p>
+      </div>
+      <!-- 最新ニュース（常に表示） -->
+      <div class="news-grid" id="newsLatest">
+        <a href="https://note.com/yoshino327_padel/n/n40696519be48" target="_blank" rel="noopener" class="news-card fade-in" style="text-decoration: none; color: inherit;">
+          <div class="news-thumb" style="background: linear-gradient(135deg, rgba(255,45,0,0.12), rgba(255,107,0,0.12)); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--accent);">パデル紹介</div>
+          <div class="news-body">
+            <div class="news-date">2026.02.12 <span class="news-tag media">Note</span></div>
+            <h3 class="news-title">パデルって何？！newスポーツの面白さ。</h3>
+            <p class="news-excerpt">Noteにてパデルの魅力を紹介する記事を公開。テニスとスカッシュを融合したラケットスポーツの面白さを解説しています。</p>
+          </div>
+        </a>
+        <article class="news-card fade-in">
+          <div class="news-thumb" style="background: linear-gradient(135deg, rgba(255,107,0,0.12), rgba(255,140,0,0.12)); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--primary);">FIP Bronze Bahrain</div>
+          <div class="news-body">
+            <div class="news-date">2026.02.08 <span class="news-tag match">試合</span></div>
+            <h3 class="news-title">FIP Bronze Bahrain 結果：R32</h3>
+            <p class="news-excerpt">バーレーンで開催されたFIP Bronze Bahrainに出場。結果はR32。中東シリーズを経て、次戦エジプト・ドバイへ転戦します。</p>
+          </div>
+        </article>
+        <a href="https://note.com/yoshino327_padel/n/n4198e8aa93bc" target="_blank" rel="noopener" class="news-card fade-in" style="text-decoration: none; color: inherit;">
+          <div class="news-thumb" style="background: linear-gradient(135deg, rgba(255,45,0,0.12), rgba(255,107,0,0.12)); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--accent);">Note 記事</div>
+          <div class="news-body">
+            <div class="news-date">2026.01.26 <span class="news-tag media">Note</span></div>
+            <h3 class="news-title">自己紹介｜世界への挑戦・目標に向かって挑戦するアスリート</h3>
+            <p class="news-excerpt">Noteにて自己紹介記事を公開。テニスからパデルへの転向、代表選出を経ての世界への挑戦について綴っています。</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- バックナンバー（初期非表示） -->
+      <div class="news-grid" id="newsArchive" style="display: none; margin-top: 24px;">
+        <!-- 過去のニュースをここに追加 -->
+        <!-- 例:
+        <article class="news-card fade-in">
+          <div class="news-thumb" style="background: linear-gradient(135deg, #dbeafe, #e0f2fe); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--primary);">大会名</div>
+          <div class="news-body">
+            <div class="news-date">2025.XX.XX <span class="news-tag match">試合</span></div>
+            <h3 class="news-title">タイトル</h3>
+            <p class="news-excerpt">概要</p>
+          </div>
+        </article>
+        -->
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <button id="newsToggle" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4); cursor: pointer;" onclick="toggleNews()" data-i18n="news-toggle-show">
+          過去のニュースを見る
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sponsors ===== -->
+  <section class="section sponsors" id="sponsors">
+    <span class="section-watermark">PARTNERS</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Partners</div>
+        <h2 class="section-title" data-i18n="sponsors-title">パートナー</h2>
+        <p class="section-subtitle" data-i18n="sponsors-subtitle">活動を支えてくださる企業・団体の皆様</p>
+      </div>
+
+      <p class="sponsors-intro" data-i18n="sponsors-intro">
+        串間よし乃の活動は、パートナーの皆様のご支援によって支えられています。
+        パデルという成長競技を通じて、企業様のブランド価値向上に貢献いたします。
+      </p>
+
+      <div class="sponsors-grid stagger-children">
+        <a href="https://www.amtecnet.co.jp/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/アムテック.png" alt="アムテック株式会社" class="sponsor-logo sponsor-logo-sm">
+          <div class="sponsor-name">アムテック株式会社</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-1">パートナー</div>
+        </a>
+        <a href="https://royalpadel.com/en/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/royalpadel.png" alt="ロイヤルパデル" class="sponsor-logo">
+          <div class="sponsor-name">ロイヤルパデル</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-2">パデル用品</div>
+        </a>
+        <a href="https://www.a2network.jp/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/Skyberry.png" alt="a2network" class="sponsor-logo sponsor-logo-sm">
+          <div class="sponsor-name">a2network</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-3">海外通信</div>
+        </a>
+        <a href="https://www.pink-ion.jp/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/pinkion.png" alt="PINK ION" class="sponsor-logo">
+          <div class="sponsor-name">PINK ION</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-4">サプリメント・飲料</div>
+        </a>
+        <a href="https://www.hoshino-kikaku.co.jp/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/hoshino.png" alt="株式会社ホシノ" class="sponsor-logo">
+          <div class="sponsor-name">株式会社ホシノ</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-5">インソール</div>
+        </a>
+        <a href="https://www.kimony.com/" target="_blank" rel="noopener" class="sponsor-card sponsor-named fade-in" style="text-decoration: none;">
+          <img src="images/sponsors/kimony.png" alt="kimony" class="sponsor-logo">
+          <div class="sponsor-name">kimony</div>
+          <div class="sponsor-category" data-i18n="sponsor-cat-6">グリップテープ</div>
+        </a>
+      </div>
+
+      <!-- ===== パデル市場の成長性 ===== -->
+      <div class="sponsors-cta fade-in">
+        <h3 data-i18n="sponsors-cta-title">世界で最も急成長しているスポーツ</h3>
+        <p data-i18n="sponsors-cta-desc">
+          パデルは全世界で3,500万人以上がプレーし、ヨーロッパ・中東・東南アジアで急速に拡大中。日本でも競技人口が増加しており、今パートナーになることで先行者メリットがあります。
+        </p>
+      </div>
+
+      <!-- ===== パートナーシップのメリット ===== -->
+      <div class="partnership-bg-section fade-in">
+      <h3 class="sponsors-benefits-title" data-i18n="partnership-benefits-heading">パートナーシップのメリット</h3>
+      <div class="sponsors-benefits-grid stagger-children">
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h4 data-i18n="wib-1-title">世界の舞台で戦う</h4>
+          <p data-i18n="wib-1-desc">年間15以上の国際大会に出場し、15カ国以上を転戦。世界に挑み続けます</p>
+        </div>
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4 data-i18n="wib-2-title">パデルを日本に届ける</h4>
+          <p data-i18n="wib-2-desc">体験会やイベントを通じて、まだ知られていないパデルの魅力を一人でも多くの人に届けます</p>
+        </div>
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </div>
+          <h4 data-i18n="wib-3-title">ストーリーを発信する</h4>
+          <p data-i18n="wib-3-desc">SNSやメディアを通じて、挑戦の裏側やパデルの世界をリアルタイムで届けます</p>
+        </div>
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/><path d="M12 3v12"/><circle cx="12" cy="21" r="1"/><path d="M3 15l9 6 9-6"/></svg>
+          </div>
+          <h4 data-i18n="partner-1-title">ブランドを世界へ</h4>
+          <p data-i18n="partner-1-desc">ウェア・用具・大会会場でのロゴ露出を通じて、あなたのブランドを世界に届けます</p>
+        </div>
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          </div>
+          <h4 data-i18n="partner-2-title">一緒に届ける</h4>
+          <p data-i18n="partner-2-desc">SNS・メディア・公式サイトでの共同発信で、パートナーとしてのストーリーを一緒に届けます</p>
+        </div>
+        <div class="sponsors-benefit-card fade-in">
+          <div class="sponsors-benefit-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 data-i18n="partner-3-title">体験を共創する</h4>
+          <p data-i18n="partner-3-desc">パデル体験会やブランディングイベントを一緒に企画・開催します</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="#contact" class="btn btn-primary" data-i18n="partnership-cta-btn" onclick="setTimeout(function(){document.getElementById('category').value='sponsor'},100)">パートナーシップについて問い合わせる</a>
+      </div>
+      </div><!-- /.partnership-bg-section -->
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <span class="section-watermark">CONTACT</span>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title" data-i18n="contact-title">お問い合わせ</h2>
+        <p class="section-subtitle" data-i18n="contact-subtitle">取材・パートナーシップ・イベント出演など、お気軽にご連絡ください</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info slide-in-left">
+          <h3 data-i18n="contact-heading">お気軽にご連絡ください</h3>
+          <p data-i18n="contact-desc">
+            パートナーシップ、メディア取材、イベント出演、
+            パデル体験会の開催など、どんなご相談でもお気軽にお問い合わせください。
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:yoshino327.padel@gmail.com" class="contact-method" style="text-decoration: none;">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>yoshino327.padel@gmail.com</strong>
+                <small data-i18n="contact-email-label">メールでのお問い合わせ</small>
+              </div>
+            </a>
+            <a href="https://x.com/yoshino327padel" target="_blank" rel="noopener" class="contact-method" style="text-decoration: none;">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>@yoshino327padel</strong>
+                <small>X (Twitter)</small>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/yoshino327_padel/" target="_blank" rel="noopener" class="contact-method" style="text-decoration: none;">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>@yoshino327_padel</strong>
+                <small>Instagram</small>
+              </div>
+            </a>
+            <a href="https://note.com/yoshino327_padel" target="_blank" rel="noopener" class="contact-method" style="text-decoration: none;">
+              <div class="contact-method-icon" style="background: var(--accent);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>yoshino327_padel</strong>
+                <small data-i18n="contact-note-label">Note（活動報告）</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form slide-in-right">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"><span data-i18n="form-name-label">お名前</span> <span style="color:red">*</span></label>
+                <input type="text" id="name" name="name" placeholder="山田 太郎" data-i18n-placeholder="form-placeholder-name" required>
+              </div>
+              <div class="form-group">
+                <label for="company" data-i18n="form-company-label">会社名</label>
+                <input type="text" id="company" name="company" placeholder="株式会社〇〇" data-i18n-placeholder="form-placeholder-company">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email"><span data-i18n="form-email-label">メールアドレス</span> <span style="color:red">*</span></label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="category" data-i18n="form-category-label">お問い合わせ種別</label>
+              <select id="category" name="category">
+                <option value="" data-i18n="form-opt-default">選択してください</option>
+                <option value="sponsor" data-i18n="form-opt-sponsor">パートナーシップについて</option>
+                <option value="media" data-i18n="form-opt-media">取材・メディア出演</option>
+                <option value="event" data-i18n="form-opt-event">イベント出演依頼</option>
+                <option value="lesson" data-i18n="form-opt-lesson">パデル体験会・レッスン</option>
+                <option value="fan" data-i18n="form-opt-fan">ファンレター・応援メッセージ</option>
+                <option value="other" data-i18n="form-opt-other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message"><span data-i18n="form-message-label">メッセージ</span> <span style="color:red">*</span></label>
+              <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" data-i18n-placeholder="form-placeholder-message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" data-i18n="form-submit">送信する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo">KUSHIMA<span>YOSHINO</span></div>
+          <p data-i18n="footer-desc">パデルの魅力を日本から世界へ。挑戦し続けるパデルプレイヤー、串間よし乃の公式サイトです。</p>
+          <div class="footer-social">
+            <a href="https://x.com/yoshino327padel" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/yoshino327_padel/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://note.com/yoshino327_padel" target="_blank" rel="noopener" aria-label="Note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <a href="#about">About</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#results">Results</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#news">News</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#sponsors" data-i18n="footer-support-sponsors">パートナー</a>
+          <a href="#contact" data-i18n="footer-support-contact">お問い合わせ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <a href="https://www.padelfip.com/player/yoshino-kushima/" target="_blank" rel="noopener" data-i18n="footer-fip">FIP公式HP</a>
+          <a href="https://note.com/yoshino327_padel" target="_blank" rel="noopener">Note</a>
+          <a href="https://www.instagram.com/yoshino327_padel/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer-copyright">&copy; 2026 Kushima Yoshino. All rights reserved.</p>
+        <p>Official Website of Padel Player Kushima Yoshino</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script>
+    // Glitch animation trigger
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroName = document.querySelector('.hero-name');
+      if (heroName) {
+        setTimeout(() => heroName.classList.add('glitch-active'), 400);
+      }
+    });
+
+    // Navbar scroll effect + progress bar
+    const navbar = document.getElementById('navbar');
+    const navProgress = document.getElementById('navProgress');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      // Progress bar
+      if (navProgress) {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        navProgress.style.width = progress + '%';
+      }
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    hamburger.addEventListener('click', () => mobileMenu.classList.add('active'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('active'));
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+    });
+
+    // Enhanced scroll animations
+    const revealElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .timeline');
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    revealElements.forEach(el => observer.observe(el));
+
+    // Count-up animation for hero stats
+    function animateCountUp(el, target, duration) {
+      let start = 0;
+      const step = function(timestamp) {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        el.textContent = Math.floor(progress * target);
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    const heroStatsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var nums = entry.target.querySelectorAll('.hero-stat-num');
+          nums.forEach(function(num) {
+            var target = parseInt(num.textContent);
+            if (!isNaN(target)) animateCountUp(num, target, 2000);
+          });
+          heroStatsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    var heroStats = document.querySelector('.hero-stats');
+    if (heroStats) heroStatsObserver.observe(heroStats);
+
+    // Count-up animation for sponsor stats
+    const sponsorStatsObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.sponsors-stat-num').forEach(function(num) {
+            var target = parseInt(num.getAttribute('data-count'));
+            if (!isNaN(target)) animateCountUp(num, target, 2000);
+          });
+          sponsorStatsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    var sponsorStats = document.querySelector('.sponsors-stats');
+    if (sponsorStats) sponsorStatsObserver.observe(sponsorStats);
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // News archive toggle
+    function toggleNews() {
+      const archive = document.getElementById('newsArchive');
+      const btn = document.getElementById('newsToggle');
+      if (archive.style.display === 'none') {
+        archive.style.display = 'grid';
+        const hideText = currentLang === 'en' ? TRANSLATIONS['news-toggle-hide'] : '最新ニュースのみ表示';
+        btn.textContent = hideText;
+        archive.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+      } else {
+        archive.style.display = 'none';
+        const showText = currentLang === 'en' ? TRANSLATIONS['news-toggle-show'] : '過去のニュースを見る';
+        btn.textContent = showText;
+      }
+    }
+
+    // Contact form (demo)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('お問い合わせありがとうございます！\n内容を確認の上、折り返しご連絡いたします。');
+      this.reset();
+    });
+
+    // Button ripple effect
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        this.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+      });
+    });
+
+    // ===== 自動データ読み込み =====
+    const THUMB_COLORS = {
+      blue: 'linear-gradient(135deg, rgba(255,107,0,0.12), rgba(255,140,0,0.12))',
+      green: 'linear-gradient(135deg, rgba(255,45,0,0.12), rgba(255,107,0,0.12))',
+      orange: 'linear-gradient(135deg, rgba(255,170,0,0.12), rgba(255,200,0,0.12))'
+    };
+    const THUMB_TEXT_COLORS = {
+      blue: 'var(--primary)',
+      green: 'var(--accent)',
+      orange: '#ffaa00'
+    };
+    const TAG_CLASSES = { match: 'match', media: 'media', event: 'event' };
+
+    function renderNewsCard(item) {
+      const bg = THUMB_COLORS[item.thumbColor] || THUMB_COLORS.blue;
+      const textColor = THUMB_TEXT_COLORS[item.thumbColor] || THUMB_TEXT_COLORS.blue;
+      const tagClass = TAG_CLASSES[item.tag] || 'match';
+
+      const inner = `
+        <div class="news-thumb" style="background: ${bg}; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: ${textColor};">${item.thumb}</div>
+        <div class="news-body">
+          <div class="news-date">${item.date} <span class="news-tag ${tagClass}">${item.tagLabel}</span></div>
+          <h3 class="news-title">${item.title}</h3>
+          <p class="news-excerpt">${item.excerpt}</p>
+        </div>
+      `;
+
+      if (item.url) {
+        const a = document.createElement('a');
+        a.href = item.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = 'news-card fade-in';
+        a.style.textDecoration = 'none';
+        a.style.color = 'inherit';
+        a.innerHTML = inner;
+        return a;
+      } else {
+        const article = document.createElement('article');
+        article.className = 'news-card fade-in';
+        article.innerHTML = inner;
+        return article;
+      }
+    }
+
+    function renderScheduleCard(item) {
+      const isActive = item.status === 'active';
+      const isPast = item.status === 'past';
+      let cardClass = 'schedule-card fade-in';
+      if (isActive) cardClass += ' active';
+      if (isPast) cardClass += ' past';
+
+      const monthColor = isActive ? '' : (isPast ? 'style="color: rgba(255,255,255,0.4)"' : '');
+      const badgeClass = item.badge === 'domestic' ? 'domestic' : 'intl';
+
+      const card = document.createElement('div');
+      card.className = cardClass;
+      if (!isActive && !isPast) {
+        // default upcoming style
+      }
+      card.innerHTML = `
+        <div class="schedule-month" ${monthColor}>${item.dates}</div>
+        <a href="${item.url}" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+          <div class="schedule-event">${item.name}</div>
+        </a>
+        <div class="schedule-location">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          ${item.location}
+        </div>
+        <span class="schedule-badge ${badgeClass}">${item.badgeLabel}</span>
+      `;
+      return card;
+    }
+
+    // ===== Gallery - tournament tabs =====
+    let galleryData = [];
+    let currentGalleryIndex = 0;
+    let currentLightboxPhotos = [];
+    let currentLightboxIndex = 0;
+
+    // Inline fallback gallery data (used when fetch fails on file:// protocol)
+    const GALLERY_FALLBACK = {
+      "events": [
+        {
+          "name": "FIP Tour 世界転戦", "nameEn": "FIP Tour Worldwide",
+          "date": "2025", "location": "世界各地", "locationEn": "Worldwide",
+          "thumbnail": "images/gallery/fip-tour/20250828_054127754_iOS.jpg",
+          "photos": ["images/gallery/fip-tour/20250828_054127754_iOS.jpg","images/gallery/fip-tour/20250828_054106052_iOS.jpg","images/gallery/fip-tour/20250811_010205000_iOS.jpg","images/gallery/fip-tour/20250717_100626648_iOS.jpg","images/gallery/fip-tour/20250706_093213266_iOS.jpg","images/gallery/fip-tour/20250706_092856279_iOS.jpg","images/gallery/fip-tour/20250615_001829320_iOS.jpg"]
+        },
+        {
+          "name": "日本代表", "nameEn": "Japan National Team",
+          "date": "2025", "location": "カタール", "locationEn": "Qatar",
+          "thumbnail": "images/gallery/japan-national-team/20251029_121941355_iOS.jpg",
+          "photos": ["images/gallery/japan-national-team/20251029_121941355_iOS.jpg"]
+        }
+      ]
+    };
+
+    async function loadGalleryData() {
+      try {
+        const res = await fetch('data/gallery.json');
+        if (!res.ok) throw new Error('fetch failed');
+        const data = await res.json();
+        galleryData = data.events || [];
+      } catch (e) {
+        // Fallback for file:// protocol or fetch failure
+        galleryData = GALLERY_FALLBACK.events;
+      }
+      if (galleryData.length > 0) {
+        renderGalleryTabs();
+        selectGalleryTab(0);
+      }
+    }
+
+    function renderGalleryTabs() {
+      const tabsContainer = document.getElementById('galleryTabs');
+      if (!tabsContainer) return;
+      tabsContainer.innerHTML = '';
+      galleryData.forEach(function(event, idx) {
+        var isEn = currentLang === 'en';
+        var btn = document.createElement('button');
+        btn.className = 'gallery-tab' + (idx === 0 ? ' active' : '');
+        btn.textContent = isEn ? event.nameEn : event.name;
+        btn.addEventListener('click', function() { selectGalleryTab(idx); });
+        tabsContainer.appendChild(btn);
+      });
+    }
+
+    function selectGalleryTab(idx) {
+      currentGalleryIndex = idx;
+      var event = galleryData[idx];
+      var isEn = currentLang === 'en';
+
+      // Update active tab
+      var tabs = document.querySelectorAll('.gallery-tab');
+      tabs.forEach(function(tab, i) {
+        tab.classList.toggle('active', i === idx);
+      });
+
+      // Update header
+      var header = document.getElementById('galleryHeader');
+      if (header) {
+        header.innerHTML = '<h3>' + (isEn ? event.nameEn : event.name) + '</h3><p>' + event.date + ' / ' + (isEn ? event.locationEn : event.location) + '</p>';
+      }
+
+      // Render photos
+      var container = document.getElementById('galleryPhotos');
+      if (!container) return;
+      container.innerHTML = '';
+      event.photos.forEach(function(photo, photoIdx) {
+        var item = document.createElement('div');
+        item.className = 'gallery-photo-item fade-in';
+        item.innerHTML = '<img src="' + photo + '" alt="' + (isEn ? event.nameEn : event.name) + '" loading="lazy">';
+        item.addEventListener('click', function() { openLightbox(event.photos, photoIdx); });
+        container.appendChild(item);
+      });
+      container.querySelectorAll('.fade-in').forEach(function(el) {
+        if (typeof observer !== 'undefined') observer.observe(el);
+      });
+    }
+
+    function openLightbox(photos, index) {
+      currentLightboxPhotos = photos;
+      currentLightboxIndex = index;
+      document.getElementById('lightboxImg').src = photos[index];
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function lightboxNav(dir) {
+      currentLightboxIndex = (currentLightboxIndex + dir + currentLightboxPhotos.length) % currentLightboxPhotos.length;
+      document.getElementById('lightboxImg').src = currentLightboxPhotos[currentLightboxIndex];
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', function(e) { e.stopPropagation(); lightboxNav(-1); });
+    document.getElementById('lightboxNext').addEventListener('click', function(e) { e.stopPropagation(); lightboxNav(1); });
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      // Close on click anywhere except prev/next buttons
+      closeLightbox();
+    });
+    document.addEventListener('keydown', function(e) {
+      var lb = document.getElementById('lightbox');
+      if (!lb || !lb.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+      if (e.key === 'ArrowRight') lightboxNav(1);
+    });
+
+    // ニュースデータの読み込み
+    async function loadNewsData() {
+      try {
+        const res = await fetch('data/news.json');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (!data.items || data.items.length === 0) return;
+
+        // 最新3件を表示、残りをアーカイブに
+        const latest = data.items.slice(0, 3);
+        const archive = data.items.slice(3);
+
+        const newsLatest = document.getElementById('newsLatest');
+        const newsArchive = document.getElementById('newsArchive');
+
+        // 最新ニュースを差し替え
+        newsLatest.innerHTML = '';
+        latest.forEach(item => {
+          newsLatest.appendChild(renderNewsCard(item));
+        });
+
+        // アーカイブを差し替え
+        newsArchive.innerHTML = '';
+        archive.forEach(item => {
+          newsArchive.appendChild(renderNewsCard(item));
+        });
+
+        // アーカイブがない場合はトグルボタンを非表示
+        const newsToggle = document.getElementById('newsToggle');
+        if (archive.length === 0) {
+          newsToggle.style.display = 'none';
+        } else {
+          newsToggle.style.display = '';
+        }
+
+        // 新しい要素にアニメーション適用
+        document.querySelectorAll('#newsLatest .fade-in, #newsArchive .fade-in').forEach(el => {
+          observer.observe(el);
+        });
+
+      } catch (e) {
+        // JSON読み込み失敗時は既存の静的HTMLをそのまま使用
+        console.log('ニュースデータの動的読み込みをスキップ（静的HTML使用）');
+      }
+    }
+
+    // スケジュールデータの読み込み
+    async function loadScheduleData() {
+      try {
+        const res = await fetch('data/schedule.json');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (!data.items || data.items.length === 0) return;
+
+        const grid = document.querySelector('#schedule .schedule-grid');
+
+        // スケジュールを差し替え
+        grid.innerHTML = '';
+        data.items.forEach(item => {
+          grid.appendChild(renderScheduleCard(item));
+        });
+
+        // 「Coming Soon」カードを追加
+        const comingSoon = document.createElement('div');
+        comingSoon.className = 'schedule-card fade-in';
+        comingSoon.style.background = 'rgba(255,255,255,0.06)';
+        comingSoon.style.borderLeftColor = 'rgba(255,255,255,0.2)';
+        comingSoon.innerHTML = `
+          <div class="schedule-month" style="color: rgba(255,255,255,0.5);">Coming Soon</div>
+          <div class="schedule-event" style="color: rgba(255,255,255,0.5);">追加エントリー</div>
+          <div class="schedule-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            確定次第更新
+          </div>
+          <span class="schedule-badge domestic">随時更新</span>
+        `;
+        grid.appendChild(comingSoon);
+
+        // 新しい要素にアニメーション適用
+        grid.querySelectorAll('.fade-in').forEach(el => {
+          observer.observe(el);
+        });
+
+      } catch (e) {
+        console.log('スケジュールデータの動的読み込みをスキップ（静的HTML使用）');
+      }
+    }
+
+    // ページ読み込み時にデータを取得
+    loadNewsData();
+    loadScheduleData();
+    loadGalleryData();
+
+    // Parallax scroll effect
+    (function() {
+      const hero = document.querySelector('.hero');
+      const watermarks = document.querySelectorAll('.section-watermark');
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        // Hero background parallax
+        if (scrollY < window.innerHeight) {
+          hero.style.backgroundPositionY = (scrollY * 0.3) + 'px';
+        }
+        // Watermark parallax
+        watermarks.forEach(wm => {
+          const rect = wm.parentElement.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const offset = (rect.top / window.innerHeight) * 30;
+            wm.style.transform = `translateX(-50%) translateY(${offset}px)`;
+          }
+        });
+      }, { passive: true });
+    })();
+  </script>
+  <script src="scripts/particles.js"></script>
+</body>
+</html>

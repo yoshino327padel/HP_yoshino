@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全成績一覧 | 串間よし乃 公式サイト</title>
+  <meta name="description" content="パデル選手串間よし乃の全大会成績一覧。FIP Tour、Premier Padelの出場結果を掲載。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="lang-switch" style="float: right; margin-top: 4px; display: flex; border-radius: 6px; overflow: hidden; border: 1.5px solid rgba(255,255,255,0.5);">
+        <button class="active" onclick="switchLang('ja')" style="width: 36px; padding: 4px 0; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px; background: rgba(255,255,255,0.2); color: #fff; transition: 0.3s ease;">JP</button>
+        <button onclick="switchLang('en')" style="width: 36px; padding: 4px 0; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px; background: transparent; color: rgba(255,255,255,0.6); transition: 0.3s ease;">EN</button>
+      </div>
+      <a href="index.html" class="back" data-i18n="results-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        トップページに戻る
+      </a>
+      <h1 data-i18n="results-page-title">全成績一覧</h1>
+      <p>Cupra FIP Tour / Premier Padel 出場結果</p>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-card-num">160</div>
+        <div class="stat-card-label" data-i18n="rp-stat-1">FIPランキング（2026/2/23時点）</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">189</div>
+        <div class="stat-card-label" data-i18n="rp-stat-2">ポイント</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-num">24</div>
+        <div class="stat-card-label" data-i18n="rp-stat-3">出場大会数</div>
+      </div>
+    </div>
+
+    <!-- 2026 -->
+    <div class="year-heading">2026</div>
+    <div class="table-scroll-wrapper">
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th data-i18n="results-th-date">日程</th>
+          <th data-i18n="results-th-tournament">大会名</th>
+          <th class="hide-mobile" data-i18n="rp-th-category">カテゴリ</th>
+          <th data-i18n="results-th-location">開催地</th>
+          <th data-i18n="results-th-result">結果</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="date-cell">02/16</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-silver-damac-dubai-2026/" target="_blank" rel="noopener">FIP Silver DAMAC Dubai</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Dubai, UAE</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="date-cell">02/11</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-wadi-padel-tournament-2026/" target="_blank" rel="noopener">FIP Bronze Wadi Padel Tournament</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Wadi El Natrun, Egypt</td>
+          <td><span class="result-badge r16">R16</span></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="date-cell">02/04</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-bahrain-2026/" target="_blank" rel="noopener">FIP Bronze Bahrain</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Bahrain</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="date-cell">01/28</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-doha-2026/" target="_blank" rel="noopener">FIP Bronze Doha</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Doha, Qatar</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="date-cell">01/14</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-silver-australian-padel-open-2026/" target="_blank" rel="noopener">FIP Silver Australian Padel Open</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Melbourne, Australia</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">01/07</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-merlbourne-padel-open-2026/" target="_blank" rel="noopener">FIP Bronze Melbourne Padel Open</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Melbourne, Australia</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- 2025 -->
+    <div class="year-heading">2025</div>
+    <div class="table-scroll-wrapper">
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th data-i18n="results-th-date">日程</th>
+          <th data-i18n="results-th-tournament">大会名</th>
+          <th class="hide-mobile" data-i18n="rp-th-category">カテゴリ</th>
+          <th data-i18n="results-th-location">開催地</th>
+          <th data-i18n="results-th-result">結果</th>
+          <th>Pts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="date-cell">12/03</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/cupra-fip-finals-2025/" target="_blank" rel="noopener">Cupra FIP Finals</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-finals">Finals</span></td>
+          <td>Shanghai, China</td>
+          <td><span class="result-badge r16">R16</span></td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="date-cell">11/22</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/premier-padel-gnp-acapulco-major-2025/" target="_blank" rel="noopener">Premier Padel GNP Acapulco Major</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-premier">Premier</span></td>
+          <td>Acapulco, Mexico</td>
+          <td><span class="result-badge q1">Q1</span></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td class="date-cell">10/25</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/newgiza-p2-2025/" target="_blank" rel="noopener">NEWGIZA Premier Padel P2</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-premier">Premier</span></td>
+          <td>Giza, Egypt</td>
+          <td><span class="result-badge q1">Q1</span></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td class="date-cell">11/16</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-platinum-skechers-2025/" target="_blank" rel="noopener">FIP Platinum Skechers</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-platinum">Platinum</span></td>
+          <td>Veracruz, Mexico</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">11/11</td>
+          <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-silver-hong-kong-2025/" target="_blank" rel="noopener">FIP Silver REAP Hong Kong</a></td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Hong Kong</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">10/27</td>
+          <td class="tournament-cell">FIP Silver DAMAC Dubai II</td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Dubai, UAE</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="date-cell">10/08</td>
+          <td class="tournament-cell">FIP Silver Indian Open</td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>India</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">09/24</td>
+          <td class="tournament-cell">FIP Bronze Denmark</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Denmark</td>
+          <td><span class="result-badge r16">R16</span></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td class="date-cell">09/14</td>
+          <td class="tournament-cell">FIP Platinum Sevilla</td>
+          <td class="hide-mobile"><span class="cat-badge cat-platinum">Platinum</span></td>
+          <td>Seville, Spain</td>
+          <td><span class="result-badge q1">Q1</span></td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td class="date-cell">09/10</td>
+          <td class="tournament-cell">FIP Silver Ceuta</td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Ceuta, Spain</td>
+          <td><span class="result-badge r16">R16</span></td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="date-cell">07/09</td>
+          <td class="tournament-cell">FIP Bronze Tokyo</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Tokyo, Japan</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="date-cell">07/02</td>
+          <td class="tournament-cell">FIP Silver Chengdu China</td>
+          <td class="hide-mobile"><span class="cat-badge cat-silver">Silver</span></td>
+          <td>Chengdu, China</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">06/18</td>
+          <td class="tournament-cell">FIP Bronze Phuket</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Phuket, Thailand</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="date-cell">06/12</td>
+          <td class="tournament-cell">FIP Bronze Indonesia II</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Indonesia</td>
+          <td><span class="result-badge sf">SF</span></td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td class="date-cell">06/04</td>
+          <td class="tournament-cell">FIP Bronze Indonesia I</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Indonesia</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="date-cell">05/28</td>
+          <td class="tournament-cell">FIP Bronze La Plana Sport</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>La Plana, Spain</td>
+          <td><span class="result-badge r32">R32</span></td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td class="date-cell">04/14</td>
+          <td class="tournament-cell">FIP Bronze Kuala Lumpur</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Kuala Lumpur, Malaysia</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td class="date-cell">03/12</td>
+          <td class="tournament-cell">FIP Bronze Hong Kong</td>
+          <td class="hide-mobile"><span class="cat-badge cat-bronze">Bronze</span></td>
+          <td>Hong Kong</td>
+          <td><span class="result-badge qf">QF</span></td>
+          <td>8</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="fip-link">
+      <span data-i18n="rp-fip-note">最新の成績は <a href="https://www.padelfip.com/player/yoshino-kushima/" target="_blank" rel="noopener">FIP公式HP</a> でもご確認いただけます</span>
+    </div>
+
+  </div>
+
+  <script src="translations.js"></script>
+</body>
+</html>

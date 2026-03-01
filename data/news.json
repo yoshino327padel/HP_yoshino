@@ -1,0 +1,47 @@
+{
+  "lastUpdated": "2026-02-19T00:00:00+09:00",
+  "items": [
+    {
+      "date": "2026.02.12",
+      "tag": "media",
+      "tagLabel": "Note",
+      "title": "パデルって何？！newスポーツの面白さ。",
+      "excerpt": "Noteにてパデルの魅力を紹介する記事を公開。テニスとスカッシュを融合したラケットスポーツの面白さを解説しています。",
+      "thumb": "パデル紹介",
+      "thumbColor": "green",
+      "url": "https://note.com/yoshino327_padel/n/n40696519be48",
+      "source": "note"
+    },
+    {
+      "date": "2026.02.08",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Bronze Bahrain 結果：R32",
+      "excerpt": "バーレーンで開催されたFIP Bronze Bahrainに出場。結果はR32。中東シリーズを経て、次戦エジプト・ドバイへ転戦します。",
+      "thumb": "FIP Bronze Bahrain",
+      "thumbColor": "blue",
+      "url": null
+    },
+    {
+      "date": "2026.01.26",
+      "tag": "media",
+      "tagLabel": "Note",
+      "title": "自己紹介｜世界への挑戦・目標に向かって挑戦するアスリート",
+      "excerpt": "Noteにて自己紹介記事を公開。テニスからパデルへの転向、日本代表選出、そして世界への挑戦について綴っています。",
+      "thumb": "Note 記事",
+      "thumbColor": "green",
+      "url": "https://note.com/yoshino327_padel/n/n4198e8aa93bc",
+      "source": "note"
+    },
+    {
+      "date": "2026.01.01",
+      "tag": "event",
+      "tagLabel": "キャリア",
+      "title": "りんたろうランド株式会社に入社",
+      "excerpt": "2026年1月よりりんたろうランド株式会社にアスリート社員として入社。プロ選手との両立によるデュアルキャリアを継続します。",
+      "thumb": "りんたろうランド入社",
+      "thumbColor": "green",
+      "url": null
+    }
+  ]
+}
