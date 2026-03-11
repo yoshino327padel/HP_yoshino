@@ -169,6 +169,8 @@ const TRANSLATIONS = {
   'partner-3-title': 'Co-create Experiences',
   'partner-3-desc': 'Jointly plan and host padel experience sessions and branding events',
   'partnership-cta-btn': 'Inquire About Partnership',
+  'sponsors-btn-support': 'Support Yoshino',
+  'sponsors-btn-partnership': 'Partnership Details',
 
   // ===== Contact =====
   'contact-title': 'Contact',
