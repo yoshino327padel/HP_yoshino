@@ -189,8 +189,8 @@ const TRANSLATIONS = {
   'why-support-desc': 'Supporters get to share the journey behind the scenes and enjoy exclusive experiences.',
   'why-support-1-title': 'Share the Journey',
   'why-support-1-desc': 'Get real-time updates through activity reports and private Instagram stories as Yoshino competes around the world.',
-  'why-support-2-title': 'Exclusive Experiences',
-  'why-support-2-desc': 'Private padel lessons, dinner events, and more — special opportunities to connect directly with the athlete.',
+  'why-support-2-title': 'Become Part of the Team',
+  'why-support-2-desc': 'Unlike corporate sponsors, you join the challenge as an individual. Share the victories and the setbacks — be the closest supporter there is.',
   'why-support-3-title': 'Make History Together',
   'why-support-3-desc': 'Your support fuels Japan\'s representative on the world stage. Together, we\'re writing a chapter of padel history that\'s never been told.',
   // Fund Usage
