@@ -717,6 +717,7 @@
               <label for="category" data-i18n="form-category-label">お問い合わせ種別</label>
               <select id="category" name="category">
                 <option value="" data-i18n="form-opt-default">選択してください</option>
+                <option value="individual-support" data-i18n="form-opt-individual-support">個人サポートについて</option>
                 <option value="sponsor" data-i18n="form-opt-sponsor">パートナーシップについて</option>
                 <option value="media" data-i18n="form-opt-media">取材・メディア出演</option>
                 <option value="event" data-i18n="form-opt-event">イベント出演依頼</option>
@@ -900,6 +901,16 @@
         btn.textContent = showText;
       }
     }
+
+    // Pre-select contact category from URL parameter
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var cat = params.get('category');
+      if (cat) {
+        var sel = document.getElementById('category');
+        if (sel) sel.value = cat;
+      }
+    })();
 
     // Contact form (demo)
     document.getElementById('contactForm').addEventListener('submit', function(e) {

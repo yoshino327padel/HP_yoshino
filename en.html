@@ -717,6 +717,7 @@
               <label for="category">Inquiry Type</label>
               <select id="category" name="category">
                 <option value="">Please select</option>
+                <option value="individual-support">Individual Support</option>
                 <option value="sponsor">Partnership</option>
                 <option value="media">Media Coverage</option>
                 <option value="event">Event Appearance</option>
@@ -900,6 +901,16 @@
         btn.textContent = 'View Past News';
       }
     }
+
+    // Pre-select contact category from URL parameter
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var cat = params.get('category');
+      if (cat) {
+        var sel = document.getElementById('category');
+        if (sel) sel.value = cat;
+      }
+    })();
 
     // Contact form (demo)
     document.getElementById('contactForm').addEventListener('submit', function(e) {

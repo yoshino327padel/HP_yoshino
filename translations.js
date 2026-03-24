@@ -257,6 +257,7 @@ const TRANSLATIONS = {
   'form-placeholder-email': 'example@email.com',
   'form-placeholder-message': 'Please enter your message',
   'form-opt-default': 'Please select',
+  'form-opt-individual-support': 'Individual Support',
   'form-opt-sponsor': 'Partnership',
   'form-opt-media': 'Media Coverage',
   'form-opt-event': 'Event Appearance',
