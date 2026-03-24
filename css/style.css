@@ -1271,9 +1271,10 @@
       /* Hero: show only right image full-width */
       .hero-bg-left { display: none; }
       .hero-bg-right { width: 100%; }
-      .achievements-bg-left, .schedule-bg-left { display: none; }
-      .achievements-bg-right, .schedule-bg-right { width: 100%; }
-      .schedule-bg-right { background-position: right center; }
+      .achievements-bg-left { display: none; }
+      .achievements-bg-right { width: 100%; }
+      .schedule-bg-right { display: none; }
+      .schedule-bg-left { width: 100%; }
       .news-bg-right { display: none; }
       .news-bg-left { width: 100%; }
       .hero-name { font-size: 2.6rem; }
