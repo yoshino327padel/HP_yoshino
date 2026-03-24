@@ -177,8 +177,9 @@ const TRANSLATIONS = {
   'support-page-subtitle': 'Your support fuels the journey to the world stage',
   // Intro
   'support-intro-title': 'Challenge the World Together',
-  'support-intro-text1': 'Kushima Yoshino continues to challenge the world tour as a Japanese padel player, competing in over 15 countries per year to climb the world rankings. This journey requires significant funding for travel, training, and equipment.',
-  'support-intro-text2': '"I want as many people as possible to know about this challenge — and to join me in it." Your support as an individual supporter is a powerful force that keeps the dream of competing on the world stage alive. Let\'s write the future of Japanese padel together.',
+  'support-intro-text1': 'Yoshino started competing in January 2024, and in just 9 months earned a spot on the Japanese national team, winning the Asian championship and finishing 11th at the World Championships. Since 2025, she has been competing individually on the world tour and is currently ranked 160th. She continues to push for higher world rankings on the global stage.',
+  'support-intro-text2': 'Competing on the world stage requires significant personal expenses. On this page, we are looking for supporters who can help fund Yoshino\'s challenge through donations. Your contributions go toward international tournament entry fees and improving her daily training environment.',
+  'support-intro-text3': 'She is committed to delivering results on the court so that every supporter can truly feel that their support was worthwhile. Even a small step can be a great push toward a big dream — please consider joining her journey.',
   // Why Padel
   'why-padel-title': 'Why Padel?',
   'why-padel-desc': 'Padel is one of the fastest-growing sports in the world. Now is a special time to get involved.',
