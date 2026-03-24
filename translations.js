@@ -16,7 +16,7 @@ const TRANSLATIONS = {
   'about-subtitle': 'A professional padel player competing on the world stage',
   'about-floating-strong': 'World Ranking',
   'about-floating-span': '#160',
-  'about-heading': 'From Tennis to Padel.<br>A <span>World</span> Challenge',
+  'about-heading': 'From Office Worker to Padel Pro.<br>A <span>World</span> Challenge',
   'about-p1': 'After excelling at the Nihon University varsity tennis team, she joined an IT company and continued tennis as a hobby. While working as a company employee, she discovered padel and made the switch in January 2024. Also selected for the Japan National Team within just 1 year, competing on the world stage in 2024 and 2025.',
   'about-p2': 'Until December 2025, she balanced full-time work at an IT company with her athletic career. From January 2026, she joined Rintaroland Co., Ltd. as an athlete employee, pursuing a dual career as both an employee and professional player. She is competing worldwide, aiming to improve her FIP ranking and qualify for the Premier Padel main draw.',
   'about-info-1-strong': 'March 27, 1998',
