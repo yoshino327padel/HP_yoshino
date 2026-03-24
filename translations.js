@@ -175,6 +175,10 @@ const TRANSLATIONS = {
   'support-back': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> Back to Top',
   'support-page-title': 'Support Kushima Yoshino',
   'support-page-subtitle': 'Your support fuels the journey to the world stage',
+  // Intro
+  'support-intro-title': 'Challenge the World Together',
+  'support-intro-text1': 'Kushima Yoshino continues to challenge the world tour as a Japanese padel player, competing in over 15 countries per year to climb the world rankings. This journey requires significant funding for travel, training, and equipment.',
+  'support-intro-text2': '"I want as many people as possible to know about this challenge — and to join me in it." Your support as an individual supporter is a powerful force that keeps the dream of competing on the world stage alive. Let\'s write the future of Japanese padel together.',
   // Why Padel
   'why-padel-title': 'Why Padel?',
   'why-padel-desc': 'Padel is one of the fastest-growing sports in the world. Now is a special time to get involved.',
@@ -203,8 +207,8 @@ const TRANSLATIONS = {
   'fund-3-title': 'Padel Promotion',
   'fund-3-desc': 'Hosting experience sessions and events to grow padel in Japan.',
   // CTA
-  'support-cta-title': 'Interested in Supporting?',
-  'support-cta-desc': 'We\'d love to find the right way for you to get involved. Feel free to reach out.',
+  'support-cta-title': 'For Support Plans, Please Contact Us',
+  'support-cta-desc': 'We\'ll suggest a support plan that\'s right for you. Feel free to reach out.',
   'support-cta-btn': 'Contact Us',
   // Partnership page
   'partnership-back': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> Back to Top',
