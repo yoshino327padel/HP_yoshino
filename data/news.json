@@ -6,11 +6,41 @@
       "tag": "media",
       "tagLabel": "Note",
       "title": "フィリピンのマニラに5日間行ってきました🇵🇭",
-      "excerpt": "滞在地について続きをみる",
-      "thumb": "Note 記事",
+      "excerpt": "FIP Silver Manilaに出場するためフィリピン・マニラへ遠征。大会の様子や現地での生活についてレポートしています。",
+      "thumb": "マニラ遠征",
       "thumbColor": "green",
       "url": "https://note.com/yoshino327_padel/n/n561393817714",
       "source": "note"
+    },
+    {
+      "date": "2026.03.15",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Silver Manila 結果：R32",
+      "excerpt": "フィリピン・マニラで開催されたFIP Silver Manilaに出場。結果はR32（5ポイント獲得）。",
+      "thumb": "FIP Silver Manila",
+      "thumbColor": "blue",
+      "url": null
+    },
+    {
+      "date": "2026.03.08",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Bronze Singapore 結果：R16",
+      "excerpt": "シンガポールで開催されたFIP Bronze Singaporeに出場。結果はR16（5ポイント獲得）。アジアシリーズを転戦中。",
+      "thumb": "FIP Bronze Singapore",
+      "thumbColor": "blue",
+      "url": null
+    },
+    {
+      "date": "2026.02.16",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Silver DAMAC Dubai 結果：R32",
+      "excerpt": "ドバイで開催されたFIP Silver DAMAC Dubaiに出場。結果はR32（5ポイント獲得）。",
+      "thumb": "FIP Silver Dubai",
+      "thumbColor": "blue",
+      "url": null
     },
     {
       "date": "2026.02.12",
@@ -22,6 +52,16 @@
       "thumbColor": "green",
       "url": "https://note.com/yoshino327_padel/n/n40696519be48",
       "source": "note"
+    },
+    {
+      "date": "2026.02.11",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Bronze Wadi Padel 結果：R16",
+      "excerpt": "エジプトで開催されたFIP Bronze Wadi Padel Tournamentに出場。結果はR16（5ポイント獲得）。",
+      "thumb": "FIP Bronze Wadi",
+      "thumbColor": "blue",
+      "url": null
     },
     {
       "date": "2026.02.08",

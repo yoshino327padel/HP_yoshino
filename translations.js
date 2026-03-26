@@ -8,14 +8,14 @@ const TRANSLATIONS = {
   'hero-desc': 'Japanese pro padel player competing on the world stage.<br>Making new history in Japanese padel.',
   'hero-btn-contact': 'Contact',
   'hero-btn-profile': 'View Profile',
-  'hero-stat-1-label': 'FIP Ranking (as of 2026/2/23)',
+  'hero-stat-1-label': 'FIP Ranking (as of 2026/3/23)',
   'hero-stat-2-label': 'Countries Competed In',
 
   // ===== About =====
   'about-title': 'Profile',
   'about-subtitle': 'A professional padel player competing on the world stage',
   'about-floating-strong': 'World Ranking',
-  'about-floating-span': '#160',
+  'about-floating-span': '#162',
   'about-heading': 'From Office Worker to Padel Pro.<br>A <span>World</span> Challenge',
   'about-p1': 'After excelling at the Nihon University varsity tennis team, she joined an IT company and continued tennis as a hobby. While working as a company employee, she discovered padel and made the switch in January 2024. Also selected for the Japan National Team within just 1 year, competing on the world stage in 2024 and 2025.',
   'about-p2': 'Until December 2025, she balanced full-time work at an IT company with her athletic career. From January 2026, she joined Rintaroland Co., Ltd. as an athlete employee, pursuing a dual career as both an employee and professional player. She is competing worldwide, aiming to improve her FIP ranking and qualify for the Premier Padel main draw.',
@@ -40,7 +40,7 @@ const TRANSLATIONS = {
   'profile-th-5': 'Sport',
   'profile-td-5': 'Padel (from January 2024)',
   'profile-th-6': 'FIP Ranking',
-  'profile-td-6': '#160 (as of Feb 23, 2026 / 189 points)',
+  'profile-td-6': '#162 (as of Mar 23, 2026 / 191 points)',
   'profile-th-7': 'National Team',
   'profile-td-7': 'Selected 2024 & 2025 (consecutive)',
   'profile-th-8': 'Career',
@@ -96,7 +96,7 @@ const TRANSLATIONS = {
   'ach-5-title': 'Cupra FIP Finals',
   'ach-5-desc': 'Competed in the FIP Finals held in China.',
   'ach-6-title': 'FIP Ranking Climbing',
-  'ach-6-badge': '#160s',
+  'ach-6-badge': '#162',
   'ach-6-desc': 'Competing worldwide and climbing the rankings.',
 
   // ===== Results =====
@@ -177,7 +177,7 @@ const TRANSLATIONS = {
   'support-page-subtitle': 'Your support fuels the journey to the world stage',
   // Intro
   'support-intro-title': 'Challenge the World Together',
-  'support-intro-text1': 'Yoshino started competing in January 2024, and in just 9 months earned a spot on the Japanese national team, winning the Asian championship and finishing 11th at the World Championships. Since 2025, she has been competing individually on the world tour and is currently ranked 160th. She continues to push for higher world rankings on the global stage.',
+  'support-intro-text1': 'Yoshino started competing in January 2024, and in just 9 months earned a spot on the Japanese national team, winning the Asian championship and finishing 11th at the World Championships. Since 2025, she has been competing individually on the world tour and is currently ranked 162nd. She continues to push for higher world rankings on the global stage.',
   'support-intro-text2': 'Competing on the world stage requires significant personal expenses. On this page, we are looking for supporters who can help fund Yoshino\'s challenge through donations. Your contributions go toward international tournament entry fees and improving her daily training environment.',
   'support-intro-text3': 'She is committed to delivering results on the court so that every supporter can truly feel that their support was worthwhile. Even a small step can be a great push toward a big dream — please consider joining her journey.',
   // Why Padel
@@ -233,7 +233,7 @@ const TRANSLATIONS = {
   'ps-b4-title': 'Reach New Customer Segments & Talent',
   'ps-b4-desc': 'Expand corporate awareness among those interested in padel and sports. The spirit of taking on challenges enhances your brand image and can positively impact recruitment efforts.',
   'ps-achievement-title': 'Aiming for Victory on the World Stage',
-  'ps-achievement-text1': 'Kushima Yoshino started competing in padel in January 2024, and in just 9 months was selected for the Japanese national team. She won the Asian championship and finished 11th at the World Championships. Since 2025, she has been competing individually on the world tour, currently ranked 160th.',
+  'ps-achievement-text1': 'Kushima Yoshino started competing in padel in January 2024, and in just 9 months was selected for the Japanese national team. She won the Asian championship and finished 11th at the World Championships. Since 2025, she has been competing individually on the world tour, currently ranked 162nd.',
   'ps-achievement-text2': 'Your support goes toward international tournament travel expenses, equipment costs, and training fees — all essential for competing on the world stage. Join us in supporting Yoshino\'s challenge to reach the top.',
   'pcta-title': 'For Plans, Please Contact Us',
   'pcta-desc': 'We\'ll propose a partnership plan tailored to your needs. Feel free to reach out.',
@@ -275,7 +275,7 @@ const TRANSLATIONS = {
   // ===== Results Page =====
   'results-back': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> Back to Top',
   'results-page-title': 'All Results',
-  'rp-stat-1': 'FIP Ranking (as of 2026/2/23)',
+  'rp-stat-1': 'FIP Ranking (as of 2026/3/23)',
   'rp-stat-2': 'Points',
   'rp-stat-3': 'Tournaments',
   'rp-th-category': 'Category',
