@@ -204,7 +204,7 @@ const TRANSLATIONS = {
   'fund-1-title': 'Travel Expenses',
   'fund-1-desc': 'Flights and accommodation for 15+ international tournaments per year — essential for improving world ranking.',
   'fund-2-title': 'Performance Enhancement',
-  'fund-2-desc': 'Physical training, coaching, and technical analysis to compete at the highest level on the world stage.',
+  'fund-2-desc': 'Physical training, coaching, technical analysis, mental training, and recovery to compete at the highest level on the world stage.',
   'fund-3-title': 'Training Environment',
   'fund-3-desc': 'Equipment such as rackets and shoes, training facility fees, and other costs to maintain a competitive environment.',
   // CTA
