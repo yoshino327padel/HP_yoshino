@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-03-31T05:57:07.366Z",
+  "lastUpdated": "2026-04-01T13:03:32+09:00",
   "items": [
+    {
+      "date": "2026.04.01",
+      "tag": "media",
+      "tagLabel": "Note",
+      "title": "香港2泊3日🇭🇰",
+      "excerpt": "FIP Bronze Hong Kong IIに出場するため香港へ遠征。2泊3日の香港での大会と現地の様子をレポートしています。",
+      "thumb": "香港遠征",
+      "thumbColor": "green",
+      "url": "https://note.com/yoshino327_padel/n/nb349ac993a66",
+      "source": "note"
+    },
+    {
+      "date": "2026.03.25",
+      "tag": "match",
+      "tagLabel": "試合",
+      "title": "FIP Bronze Hong Kong II 結果：SF（準決勝）",
+      "excerpt": "香港で開催されたFIP Bronze Hong Kong IIに出場。準決勝進出（14ポイント獲得）。自己ベストランキング157位を更新！",
+      "thumb": "FIP Bronze Hong Kong II",
+      "thumbColor": "blue",
+      "url": null
+    },
     {
       "date": "2026.03.24",
       "tag": "media",

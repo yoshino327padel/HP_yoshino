@@ -1,4 +1,14 @@
 {
-  "lastUpdated": "2026-03-24T12:00:00+09:00",
-  "items": []
+  "lastUpdated": "2026-03-30T12:00:00+09:00",
+  "items": [
+    {
+      "dates": "2026.04.11 - 04.18",
+      "name": "NEWGIZA Premier Padel P2",
+      "location": "Giza, Egypt",
+      "url": "https://www.padelfip.com/events/newgiza-p2-2026/",
+      "status": "active",
+      "badge": "intl",
+      "badgeLabel": "エントリー済"
+    }
+  ]
 }

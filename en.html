@@ -86,8 +86,8 @@
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
-            <div class="hero-stat-num">162</div>
-            <div class="hero-stat-label">FIP Ranking (as of 2026/3/23)</div>
+            <div class="hero-stat-num">157</div>
+            <div class="hero-stat-label">FIP Ranking (as of 2026/3/30)</div>
           </div>
           <div class="hero-stat">
             <div class="hero-stat-num">15+</div>
@@ -126,7 +126,7 @@
             While working as a company employee, she discovered padel and made the switch in January 2024.
             Also selected for the Japan National Team within just 1 year, competing on the world stage in 2024 and 2025.
             From January 2026, she joined Rintaroland Co., Ltd. as an athlete employee, pursuing a dual career.
-            She is competing worldwide, aiming for the top 20 in world rankings, a World Championship quarterfinal, and Premier Padel main draw qualification.
+            She is competing worldwide, aiming for the top 20 in world rankings and a World Championship quarterfinal.
           </p>
         </div>
       </div>
@@ -177,8 +177,8 @@
               </div>
               <div class="timeline-item highlight">
                 <div class="timeline-year">2024</div>
-                <div class="timeline-title">World Championship / APPT Master Final</div>
-                <div class="timeline-desc">World Championship & APPT Master Final</div>
+                <div class="timeline-title">Asian Qualifier Champion / APPT Master Final</div>
+                <div class="timeline-desc">Won Asian Qualifier & APPT Master Final</div>
               </div>
               <div class="timeline-item highlight">
                 <div class="timeline-year">2025</div>
@@ -216,15 +216,15 @@
       <div class="achievements-grid stagger-children" style="margin-bottom: 48px;">
         <div class="achievement-card fade-in">
           <div class="achievement-year">2024</div>
-          <div class="achievement-title">World Championship Debut</div>
-          <span class="achievement-result gold-badge">World Stage</span>
-          <p class="achievement-desc">Reached the world stage within 1 year of starting padel.</p>
+          <div class="achievement-title">Asian Qualifier Champion</div>
+          <span class="achievement-result gold-badge">Champion</span>
+          <p class="achievement-desc">Won the World Championship Asian Qualifier. Selected for the Japan National Team.</p>
         </div>
         <div class="achievement-card fade-in">
           <div class="achievement-year">2024</div>
           <div class="achievement-title">World Padel Championship</div>
-          <span class="achievement-result silver-badge">Competed</span>
-          <p class="achievement-desc">Competed in the World Championship. Japan National Team member.</p>
+          <span class="achievement-result silver-badge">11th of 16 teams</span>
+          <p class="achievement-desc">Competed in the World Padel Championship as Japan National Team. Finished 11th of 16 teams.</p>
         </div>
         <div class="achievement-card fade-in">
           <div class="achievement-year">2024</div>
@@ -255,7 +255,7 @@
         <div class="achievement-card fade-in">
           <div class="achievement-year">2025-26</div>
           <div class="achievement-title">FIP Ranking Climbing</div>
-          <span class="achievement-result silver-badge">#162</span>
+          <span class="achievement-result silver-badge">#157</span>
           <p class="achievement-desc">Competing worldwide and climbing the rankings.</p>
         </div>
       </div>
@@ -328,6 +328,13 @@
         <tbody>
           <tr class="results-year-divider">
             <td colspan="5">2026</td>
+          </tr>
+          <tr>
+            <td class="year-cell">03/25</td>
+            <td class="tournament-cell"><a href="https://www.padelfip.com/events/fip-bronze-hong-kong-ii-2026/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">FIP Bronze Hong Kong II</a></td>
+            <td>Hong Kong</td>
+            <td><span class="result-badge sf">SF</span></td>
+            <td class="hide-mobile">14</td>
           </tr>
           <tr>
             <td class="year-cell">03/12</td>
@@ -418,6 +425,17 @@
         <p class="section-subtitle">Cupra FIP Tour Entered Tournaments</p>
       </div>
       <div class="schedule-grid">
+        <div class="schedule-card active fade-in">
+          <div class="schedule-month">2026.04.11 - 04.18</div>
+          <a href="https://www.padelfip.com/events/newgiza-p2-2026/" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+            <div class="schedule-event">NEWGIZA Premier Padel P2</div>
+          </a>
+          <div class="schedule-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Giza, Egypt
+          </div>
+          <span class="schedule-badge intl">Entered</span>
+        </div>
         <!-- Additional entries placeholder -->
         <div class="schedule-card fade-in" style="background: rgba(255,255,255,0.06); border-left-color: rgba(255,255,255,0.2);">
           <div class="schedule-month" style="color: rgba(255,255,255,0.5);">Coming Soon</div>
@@ -690,7 +708,7 @@
           </div>
         </div>
         <div class="contact-form slide-in-right">
-          <form id="contactForm">
+          <form id="contactForm" action="https://formspree.io/f/xqeglknw" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name <span style="color:red">*</span></label>
@@ -904,11 +922,30 @@
       }
     })();
 
-    // Contact form (demo)
+    // Contact form (Formspree)
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thank you for your inquiry!\nWe will review your message and get back to you shortly.');
-      this.reset();
+      var form = this;
+      var btn = form.querySelector('.btn-submit');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          alert('Thank you for your inquiry!\nWe will review your message and get back to you shortly.');
+          form.reset();
+        } else {
+          alert('Failed to send. Please contact us directly via email.');
+        }
+      }).catch(function() {
+        alert('Failed to send. Please contact us directly via email.');
+      }).finally(function() {
+        btn.disabled = false;
+        btn.textContent = 'Send';
+      });
     });
 
     // Button ripple effect
