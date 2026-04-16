@@ -1,32 +1,37 @@
 {
-  "lastUpdated": "2026-02-25T00:00:00+09:00",
+  "lastUpdated": "2026-04-01T00:00:00+09:00",
   "events": [
     {
       "name": "FIP Tour 世界転戦",
       "nameEn": "FIP Tour Worldwide",
-      "date": "2025",
+      "date": "2025-2026",
       "location": "世界各地",
       "locationEn": "Worldwide",
-      "thumbnail": "images/gallery/fip-tour/20250828_054127754_iOS.jpg",
+      "thumbnail": "images/gallery/fip-tour/20260330_1.jpeg",
       "photos": [
-        "images/gallery/fip-tour/20250828_054127754_iOS.jpg",
-        "images/gallery/fip-tour/20250828_054106052_iOS.jpg",
-        "images/gallery/fip-tour/20250811_010205000_iOS.jpg",
-        "images/gallery/fip-tour/20250717_100626648_iOS.jpg",
-        "images/gallery/fip-tour/20250706_093213266_iOS.jpg",
-        "images/gallery/fip-tour/20250706_092856279_iOS.jpg",
-        "images/gallery/fip-tour/20250615_001829320_iOS.jpg"
+        "images/gallery/fip-tour/20260330_1.jpeg",
+        "images/gallery/fip-tour/20260330_2.jpeg",
+        "images/gallery/fip-tour/20250828.jpg",
+        "images/gallery/fip-tour/20250811.jpg",
+        "images/gallery/fip-tour/20250717.jpg",
+        "images/gallery/fip-tour/20250706_1.jpg",
+        "images/gallery/fip-tour/20250706_2.jpg",
+        "images/gallery/fip-tour/20250615.jpg",
+        "images/gallery/fip-tour/1.jpg"
       ]
     },
     {
       "name": "日本代表",
       "nameEn": "Japan National Team",
-      "date": "2025",
+      "date": "2024",
       "location": "カタール",
       "locationEn": "Qatar",
       "thumbnail": "images/gallery/japan-national-team/20251029_121941355_iOS.jpg",
       "photos": [
-        "images/gallery/japan-national-team/20251029_121941355_iOS.jpg"
+        "images/gallery/japan-national-team/20251029_121941355_iOS.jpg",
+        "images/gallery/japan-national-team/news1.jpg",
+        "images/gallery/japan-national-team/news2.jpg",
+        "images/gallery/japan-national-team/partner.jpeg"
       ]
     }
   ]

@@ -13,16 +13,6 @@
       "source": "note"
     },
     {
-      "date": "2026.03.25",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Bronze Hong Kong II 結果：SF（準決勝）",
-      "excerpt": "香港で開催されたFIP Bronze Hong Kong IIに出場。準決勝進出（14ポイント獲得）。自己ベストランキング157位を更新！",
-      "thumb": "FIP Bronze Hong Kong II",
-      "thumbColor": "blue",
-      "url": null
-    },
-    {
       "date": "2026.03.24",
       "tag": "media",
       "tagLabel": "Note",
@@ -34,36 +24,6 @@
       "source": "note"
     },
     {
-      "date": "2026.03.15",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Silver Manila 結果：R32",
-      "excerpt": "フィリピン・マニラで開催されたFIP Silver Manilaに出場。結果はR32（5ポイント獲得）。",
-      "thumb": "FIP Silver Manila",
-      "thumbColor": "blue",
-      "url": null
-    },
-    {
-      "date": "2026.03.08",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Bronze Singapore 結果：R16",
-      "excerpt": "シンガポールで開催されたFIP Bronze Singaporeに出場。結果はR16（5ポイント獲得）。アジアシリーズを転戦中。",
-      "thumb": "FIP Bronze Singapore",
-      "thumbColor": "blue",
-      "url": null
-    },
-    {
-      "date": "2026.02.16",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Silver DAMAC Dubai 結果：R32",
-      "excerpt": "ドバイで開催されたFIP Silver DAMAC Dubaiに出場。結果はR32（5ポイント獲得）。",
-      "thumb": "FIP Silver Dubai",
-      "thumbColor": "blue",
-      "url": null
-    },
-    {
       "date": "2026.02.12",
       "tag": "media",
       "tagLabel": "Note",
@@ -73,26 +33,6 @@
       "thumbColor": "green",
       "url": "https://note.com/yoshino327_padel/n/n40696519be48",
       "source": "note"
-    },
-    {
-      "date": "2026.02.11",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Bronze Wadi Padel 結果：R16",
-      "excerpt": "エジプトで開催されたFIP Bronze Wadi Padel Tournamentに出場。結果はR16（5ポイント獲得）。",
-      "thumb": "FIP Bronze Wadi",
-      "thumbColor": "blue",
-      "url": null
-    },
-    {
-      "date": "2026.02.08",
-      "tag": "match",
-      "tagLabel": "試合",
-      "title": "FIP Bronze Bahrain 結果：R32",
-      "excerpt": "バーレーンで開催されたFIP Bronze Bahrainに出場。結果はR32。中東シリーズを経て、次戦エジプト・ドバイへ転戦します。",
-      "thumb": "FIP Bronze Bahrain",
-      "thumbColor": "blue",
-      "url": null
     },
     {
       "date": "2026.01.26",
